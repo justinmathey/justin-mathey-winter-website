@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,700;1,400&display=swap');
+header {
+}
+/* mian navigation */
+nav {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed; /* this will fix the nav bar inplace even when scroling */
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 55px;
+}
+
+nav ul li a {
+    color: #515A5A;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+nav ul li a.currentpage {
+    text-decoration: underline;
+}
+
+/*background image and page title*/
+section {
+    width: 100%;
+    height: 100%;
+/*    filter: brightness(50%);*/
+}
+
+section.sec1 {
+    background-image: url(../images/churchill-house-21.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    overflow: auto;
+}
+
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+main {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*Typography*/
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Crimson Text', serif;
+    color: black;
+}
+h1 {
+    font-size: 90px;
+    color: white;
+    padding-bottom: 25px;
+}
+h2 {
+    font-size: 20px;
+    color: white;
+}
+h3 {
+    text-decoration: underline;
+    font-size: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+p {
+    font-size: 16px;
+    color: #000000;
+}
+
+/*ancor styles*/
+a {
+    
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    
+}
+a:active {
+    text-decoration: underline;
+}
+
+
+footer {
+    height: 1000px;
+    background-color: #555;    
+}
