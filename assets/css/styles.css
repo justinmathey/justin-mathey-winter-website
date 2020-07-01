@@ -111,7 +111,7 @@ nav ul li a.currentpage {
     color: lightgrey;
 }
 .dropdown {
-    position: relative;
+    position: fixed;
     width: 100%;
     display:inline-block;
     background: rgba(0, 0, 0, 0.4);
@@ -128,7 +128,7 @@ nav ul li a.currentpage {
     overflow: auto;
 }
 .dropdown-content ul li a {
-    background-color: gainsboro;
+    background-color: white;
     padding: 3rem;
     color: #555;
     text-decoration: none;
@@ -136,7 +136,7 @@ nav ul li a.currentpage {
     text-align: left;
 }
 .dropdown-content ul li:nth-child(1) {
-/*    margin-top: 2rem;*/
+    margin-top: 2rem;
 
 
 }
@@ -208,12 +208,31 @@ footer {
     justify-content: center;
     text-align: center;
 }
-
-
 footer p{
-    margin-top: 25px;
     color: gray;
     font-style: italic;
+}
+/* fotter navigation */
+.footernav {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+}
+.footernav ul {
+}
+.footernav ul li{
+    margin-top: 3rem;
+}
+.footernav ul li a {
+    font-size: 4rem;
+    color: lightgrey;
+    text-decoration: none;
+}
+.footernav ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+.footernav ul li a.currentpage {
+    color: white;
 }
 
 /*Responsive web design*/
