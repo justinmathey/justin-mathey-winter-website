@@ -287,26 +287,33 @@ footer p{
         grid-gap: auto;
     }
     #grid2 > div:nth-of-type(5) {
-    grid-column: 1 / 2;
+        grid-column: 1 / 2;
     }
     
     p {
         font-size: 3rem;
     }
     #sec1 p {
-    font-size: 2rem;
+        font-size: 2rem;
     }
     
     h1 {
-    font-size: 5rem;
-    padding-bottom: 2rem;
+        font-size: 5rem;
+        padding-bottom: 2rem;
     }
-    
+    h2 {
+        font-size: 3rem;
+    }
     .footernav ul li{
-    margin-top: 3rem;
+        margin-top: 3rem;
     }
     .footernav ul li a {
     font-size: 4rem;
     }
+    .list ul li{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
 }
 
