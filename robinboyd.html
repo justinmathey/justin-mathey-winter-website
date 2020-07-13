@@ -20,10 +20,10 @@
                 <ul>    
                 <!-- HTML Comment (ul is unorded list tag) -->
                     <li><a href="index.html">Home</a></li>  
-                    <li><a href="signifigance.html" class="currentpage">Signifigance</a></li>
+                    <li><a href="signifigance.html">Signifigance</a></li>
                     <li><a href="description.html">Description</a></li>
                     <li><a href="history.html">History</a></li>
-                    <li><a href="robinboyd.html">Robin Boyd</a></li>
+                    <li><a href="robinboyd.html" class="currentpage">Robin Boyd</a></li>
                     <!-- HTML Comment (<li> = list item, <a> =  anchor tag, href is a "hypertext reference" attribute, link goes between the quotations) -->
                 </ul>
         </nav>
@@ -33,33 +33,29 @@
             <div id="myDropdown" class="dropdown-content">
                 <ul>
                     <li><a href="index.html">Home</a></li>  
-                    <li><a href="signifigance.html" class="currentpage">Signifigance</a></li>
+                    <li><a href="signifigance.html">Signifigance</a></li>
                     <li><a href="description.html">Description</a></li>
                     <li><a href="history.html">History</a></li>
-                    <li><a href="robinboyd.html">Robin Boyd</a></li>
+                    <li><a href="robinboyd.html" class="currentpage">Robin Boyd</a></li>
                 </ul>
             </div>
         </div>
         
-        <section id="sec1">
+        <article class="article">
             <div class="wrapper">
             <h1>Robin Boyd</h1>
                     <p>
                         Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra.
                     </p>
             </div>
-        </section>
+        </article>
     </header>
 
     <main>
         <div class="wrapper">
-            <section id="grid">
-                <div class="content">
-                    <img src="assets/images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg" alt="picture of Robin Boyd" height="auto" width="100%">
-                </div>
-            </section>
-           <section id="grid2">
-                <div>
+            
+           <section id="grid-container2">
+                <div class"grid-item">
                     <p>
                         Although the three partners were prominent as individuals, the firm maintained a strong design unity. Some buildings revealed the hand of one or other of the architects, but in general the firm developed a corporate style, combining the philosophies of the trio and representing the advanced thinking of that era. They often worked or supervised on each other’s projects. Their work was a distinctive Australian form of the International Style, then called Contemporary. (Clerehan, 1993)
 
@@ -69,18 +65,35 @@
 
                         His architectural work is mostly known through his residential designs. He was known for his ability to design houses that would meet client needs, solve site problems and still retain architectural integrity. The designs were heavily influenced by the functional and international styles of architecture and became known as the Melbourne Regional style. It was light, simple and elegant and unmistakably modern. (Architecture Today 1972; Saunders 1972; and Serle 1995)
                     </p>
+                </div>
+            </section>
+            
+            <section id="grid-container">
+                <div class="grid-item">
+                    <img src="assets/images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg" alt="picture of Robin Boyd" height="auto" width="100%">
+                </div>
+            </section>
+            <section id="grid-container2">
+                <div class="grid-item">
                     <h2>Boyd’s residential designs that are registered on the ACT Heritage Register include:</h2>
                 </div>
             </section>
-            <div class="list">
+            
+            <section id="list">
                 <ul>
                     <li>Manning Clark’s House, 11 Tasmania Circle, Forrest (1952);</li>
                     <li>Fenner House, 8 Monaro Crescent, Red Hill (1953); and</li>
                     <li>Eltringham House, 12 Marawa Place, Aranda (1968-69).</li>
                 </ul>
-            </div>
-            <h2>He is also credited with the following designs in the ACT:</h2>
-            <div class="list">
+            </section>
+            
+            <section id="grid-container2">
+                <div class="grid-item">
+                    <h2>He is also credited with the following designs in the ACT:</h2>
+                </div>
+            </section>
+            
+            <section id="list">
                 <ul>
                     <li>Dr Hilary Roche House, Bedford Street, Deakin (1954);</li>
                     <li>Zoology building ANU (1961);</li>
@@ -89,9 +102,10 @@
                     <li>204 Monaro Crescent, Red Hill (1964); and</li>
                     <li>Zoology Building ANU (1963-8).</li>
                 </ul>
-            </div>
-           <section id="grid2">
-                <div>
+            </section>
+            
+           <section id="grid-container2">
+                <div class="grid-item">
                     <p>
                         In the 1960s he started to move away from the glass box functionalism of the International and Melbourne Regional styles arguing that it had a limited range of expression and instead tried, somewhat unsuccessfully, to land large prestigious commissions for advanced high-rise buildings. He submitted many designs, but few were successful. Those that he did win tended to be of a more moderate size, such as the Menzies College at La Trobe University or Churchill House. Taylor (1990:80) notes that Boyd’s interest in Brutalism was heavily influenced by his travels in Japan and he became known as the chief advocate in Australia for the “vigorous, concrete buildings of post-war Japan”, but goes on to note that his own attempts at major Brutalist designs show “...a somewhat crude, unexpressive, Brutalist aesthetic. 
 
@@ -101,7 +115,8 @@
                     </p>
                 </div>
             </section>
-            </div>
+            
+        </div>
     </main>
     
     <footer>
@@ -113,14 +128,16 @@
                 <ul>    
                 <!-- HTML Comment (ul is unorded list tag) -->
                     <li><a href="index.html">Home</a></li>  
-                    <li><a href="signifigance.html" class="currentpage">Signifigance</a></li>
+                    <li><a href="signifigance.html">Signifigance</a></li>
                     <li><a href="description.html">Description</a></li>
                     <li><a href="history.html">History</a></li>
-                    <li><a href="robinboyd.html">Robin Boyd</a></li>
+                    <li><a href="robinboyd.html" class="currentpage">Robin Boyd</a></li>
                 </ul>
+            </div>
         </div>
-        </div>
-        <script src="assets/javascript/myscripts.js"></script>
+        
+        <script src="assets/javascript/myscripts.js"></script>  <!-- HTML Comment (link to my javascript) -->
+
     </footer>
 </body>
 </html>

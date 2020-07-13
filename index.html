@@ -14,7 +14,7 @@
     
 <body>      
 <!-- HTML Comment (this is where all visable content will go) -->
-    <header>            
+    <header>
         <nav>
         <!-- HTML Comment (nav is main navagation) -->
                 <ul>    
@@ -27,7 +27,6 @@
                     <!-- HTML Comment (<li> = list item, <a> =  anchor tag, href is a "hypertext reference" attribute, link goes between the quotations) -->
                 </ul>
         </nav>
-        
         <div class="dropdown">
         <button onclick="myFunction()" class="button">Menu</button>
             <div id="myDropdown" class="dropdown-content">
@@ -41,7 +40,7 @@
             </div>
         </div>
         
-        <section id="sec1">
+        <article class="article">
             <div class="wrapper">
                 <h1>Churchill House</h1>
                 <p>
@@ -52,16 +51,16 @@
                     Although it has undergone some alterations over the years, the building still displays key features of the brutalist style with its large areas of blank wall and use off-form concrete, sloping structural fins and precast concrete non-loadbearing wall panels, precast fins for sun protection, and vertical slit windows. Churchill House displays a fairly restrained form in comparison with the major Canberra buildings that followed in this style: Cameron Offices, National Gallery of Australia and High Court of Australia.
                 </p>
             </div>
-        </section>
+        </article>
     </header>
 
     <main>
         <div class="wrapper">
-            <section id="grid">
-                <div class="content-1">
+            <section id="grid-container">
+                <div class="grid-item">
                     <img src="assets/images/churchill-house-12.jpg" alt="Black and white drawing of Churchill House" height="auto" width="100%">               
                 </div>
-                <div class="content-2">
+                <div class="grid-item">
                     <h2>Signifigance</h2>
                     <p>
                         Churchill House is a good example of the Late Twentieth Century Brutalist style, (1960-), displaying several key features as follows:
@@ -72,10 +71,10 @@
 
                     </p>
                 </div>
-                <div class="content-3">
+                <div class="grid-item">
                     <img src="assets/images/churchill-house-14.jpg" alt="Exterior shot of Churchill House" height="auto" width="100%">               
                 </div>
-                <div class="content-4">
+                <div class="grid-item">
                     <h2>Description</h2>
                     <p>
                         Churchill House was designed by Robin Boyd for the Winston Churchill Memorial Trust of Australia in 1969-70 and construction was completed in 1971. The building is an example of the Late Twentieth-Century Brutalist Style (1960-) with its large areas of blank wall and off-form concrete.
@@ -84,24 +83,24 @@
                         <a href="description.html">Read more</a>
                     </p>
                 </div>
-                <div class="content-5">
+                <div class="grid-item">
                     <img src="assets/images/churchill-house-1.jpg" alt="Old blueprints of Churchill House" height="auto" width="100%">               
                 </div>
-                <div class="content-6">
+                <div class="grid-item">
                     <h2>History</h2>
                     <p>
                         Churchill House was built by the Winston Churchill Memorial Trust of Australia. The Trust began consideration of erecting a building of its own in 1967 and formed a building committee in 1968. In 1969 it acquired a lease for land on Northbourne Avenue, the current site, and engaged the architect Robin Boyd to design the building.
                         <a href="history.html">Read more</a>
                     </p>
                 </div>
-                <div class="content-7">
+                <div class="grid-item">
                     <img src="assets/images/extra2-robin%20boyd%20portrait-copyright-Mark-Strizic.jpg" alt="robin boyd" height="auto" width="100%">               
                 </div>
-                <div class="content-8">
+                <div class="grid-item">
                     <h2>Robin Boyd</h2>
                     <p>
                         Robin Gerard Penleigh Boyd (1919-1971) was a nationally and internationally renowned architect. He was also widely published and appreciated as an architectural critic. In 1953 Robin Boyd, Roy Grounds and Frederick Romberg formed the practice of Grounds, Romberg and Boyd which became a leading architectural firm in Melbourne. The firm also practiced extensively in Canberra. 
-                        <a href="robin boyd">Read more</a>
+                        <a href="robinboyd.html">Read more</a>
                     </p>
                 </div>
             </section>    
@@ -122,9 +121,11 @@
                     <li><a href="history.html">History</a></li>
                     <li><a href="robinboyd.html">Robin Boyd</a></li>
                 </ul>
+            </div>
         </div>
-        </div>
-        <script src="assets/javascript/myscripts.js"></script>
+        
+        <script src="assets/javascript/myscripts.js"></script>  <!-- HTML Comment (link to my javascript) -->
+        
     </footer>
 </body>
 </html>
