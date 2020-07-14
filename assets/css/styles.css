@@ -36,6 +36,7 @@ p {
     margin-top: 2rem;
 }
 
+/*position content using div wrapper*/
 .wrapper {
     width: 75%;
     margin: 0 auto;
@@ -64,6 +65,7 @@ header {
 /* mian navigation */
 nav {
     font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
     position: fixed; /* this will fix the nav bar inplace even when scroling */
     color: #555;
     width: 100%;
@@ -79,7 +81,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a {
-    padding: 1.3rem;
+    padding: 0rem 2rem;
     color: dimgrey;
     text-decoration: none;
     letter-spacing: 0.05rem;
@@ -96,25 +98,29 @@ nav ul li a.currentpage {
 .button {
     display: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     color: #555;
-    width: 100%;
+    width: auto;
     background-color: white;
-    padding-top: 1.563rem;
-    padding-bottom: 1.563rem;    
+    padding-top: 2rem;
+    padding-bottom: 2rem;    
     text-align: left;
     padding-left: 3rem;
+    padding-right: 3rem;
 }
 .button:hover {
     color: lightgrey;
 }
 .dropdown {
+    position:relative;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.25);  /*rgba includes Alpha channel responsible for transparency*/
 }
 .dropdown-content {
     display: none;
     font-family: 'Nunito', sans -serif;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     overflow: auto;
     text-align: left;
 }
@@ -122,12 +128,12 @@ nav ul li a.currentpage {
     display: block;
     color: #555;
     background-color: white;
-    padding-left: 2.5rem;
-    padding-top: 2.5rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
     text-decoration: none;
 }
 .dropdown-content ul li a:last-child {
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .dropdown ul li a:hover {
@@ -144,7 +150,7 @@ nav ul li a.currentpage {
 /*background image and page title*/
 .article {
     width: 100%;
-    height: 100vh;  /*vh = viewport height is used to make the box fit the full screen hight*/
+    min-height: 100vh;  /*vh = viewport height is used to make the box fit the full screen hight*/
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.25);  /*rgba includes Alpha channel responsible for transparency*/
     display: flex;  /*specifies the display behavior*/
@@ -237,12 +243,21 @@ footer p{
 }
 
 /*Responsive web design*/
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 800px) { 
+    
     nav {
         display: none;
-    }
+    }   
+    
     .button {
         display: block;
+    }
+}
+@media screen and (max-device-width: 480px) { 
+    
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
     }
     
     /*convering the grids from 2 colums to singal colum grids*/
@@ -257,18 +272,17 @@ footer p{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: auto;
     }
-    
-    p {
-        font-size: 3rem;
-    }
     .article p {
         font-size: 2rem;
+        overflow: auto;
     }
-    
-    h1 {
-        font-size: 5rem;
-        padding-bottom: 2rem;
+    .article p{
+        font-size: 2.5rem;
     }
+    p {
+        font-size: 2.5rem;
+    }
+
     h2 {
         font-size: 3rem;
     }
@@ -276,7 +290,7 @@ footer p{
         margin-top: 3rem;
     }
     .footernav ul li a {
-    font-size: 4rem;
+    font-size: 3rem;
     }
     #list ul li{
         font-size: 3rem;
@@ -284,5 +298,4 @@ footer p{
     }
 
 
-}
 
