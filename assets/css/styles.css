@@ -81,7 +81,7 @@ nav ul li{
     display: inline-block;
 }
 nav ul li a {
-    padding: 0rem 2rem;
+    padding: 0rem 3rem;
     color: dimgrey;
     text-decoration: none;
     letter-spacing: 0.05rem;
@@ -100,12 +100,12 @@ nav ul li a.currentpage {
     font-family: 'Nunito', sans-serif;
     font-size: 3rem;
     color: #555;
-    width: auto;
+    width: 100%;
     background-color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;    
     text-align: left;
-    padding-left: 3rem;
+    padding-left: 2rem;
     padding-right: 3rem;
 }
 .button:hover {
@@ -113,7 +113,7 @@ nav ul li a.currentpage {
 }
 .dropdown {
     position:relative;
-    width: 100vw;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.25);  /*rgba includes Alpha channel responsible for transparency*/
 }
 .dropdown-content {
@@ -253,6 +253,8 @@ footer p{
         display: block;
     }
 }
+
+
 @media screen and (max-device-width: 480px) { 
     
     .wrapper {
@@ -279,13 +281,18 @@ footer p{
     .article p{
         font-size: 2.5rem;
     }
+    
+    article h1{
+        font-size: 5rem;
+    }
     p {
         font-size: 2.5rem;
     }
-
+    
     h2 {
         font-size: 3rem;
     }
+    
     .footernav ul li{
         margin-top: 3rem;
     }
@@ -296,6 +303,5 @@ footer p{
         font-size: 3rem;
         line-height: 3rem;
     }
-
-
+}
 
